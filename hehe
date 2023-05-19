@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage Interaktif</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Homepage Interaktif</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Selamat datang di Homepage Kami!</h2>
+      <p>Ini adalah contoh halaman homepage interaktif dengan warna biru dan emas.</p>
+      <button id="changeColorButton">Ubah Warna</button>
+    </section>
+  </main>
+  <footer>
+    <p>Hak Cipta &copy; 2023</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #00539C;
+  color: #FFD700;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #FFD700;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #00539C;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #00539C;
+  color: #FFD700;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #00539C;
+  color: #FFD700;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FFD700;
+  color: #00539C;
+}
+
+footer {
+  background-color: #00539C;
+  color: #FFD700;
+  padding: 10px;
+  text-align: center;
+}
+
+document.getElementById('changeColorButton').addEventListener('click', function() {
+  var body = document.querySelector('body');
+  body.classList.toggle('blue-gold');
+});
